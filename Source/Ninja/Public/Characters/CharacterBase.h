@@ -1,0 +1,22 @@
+// Copyright Ivan Tsarkov Rockdevels
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "GameFramework/Character.h"
+#include "CharacterBase.generated.h"
+
+UCLASS(Abstract)
+class NINJA_API ACharacterBase : public ACharacter
+{
+	GENERATED_BODY()
+
+public:
+	// Sets default values for this character's properties
+	ACharacterBase();
+
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
+};
